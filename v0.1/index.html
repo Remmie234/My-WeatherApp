@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="intro">
+        <p>
+          Right now in
+          <input
+            type="text"
+            class="city-input"
+            placeholder="Antarctica"
+            aria-label="Choose city"
+          />,
+        </p>
+        <p class="weather-description"></p>
+      </div>
+
+      <div class="today-readings">
+        <div class="weather-status-icon">
+          <img src="" alt="current weather status" id="weather-icon" />
+        </div>
+
+        <div class="current-readings--temperature">
+          <h1 id="current-temp">--°C</h1>
+          <p>
+            <span id="max-temp">--°C</span> /
+            <span id="min-temp">--°C</span>
+          </p>
+        </div>
+
+        <div class="current-readings--sidebar">
+          <div class="sidebar-values">
+            <img
+              src="./img/Wind-Flow-1.png"
+              alt="Wind Speed"
+              class="reading-icon"
+            />
+            <span id="wind-speed" class="reading-value">--</span>
+          </div>
+
+          <div class="sidebar-values">
+            <img
+              src="./img/Open-Umbrella.png"
+              alt="Precipitation chance"
+              class="reading-icon"
+            />
+            <span id="precipitation-chance" class="reading-value">--%</span>
+          </div>
+
+          <div class="sidebar-values">
+            <img
+              src="./img/Water-Drop.png"
+              alt="Relative Humdity"
+              class="reading-icon"
+            />
+            <span id="relative-humidity" class="reading-value">--%</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="future-readings-container"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

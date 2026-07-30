@@ -1,0 +1,167 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #cbe7ff;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.container {
+  margin: 0em auto;
+  padding: 3em 0 0 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.intro {
+  color: #a8a8a8;
+  margin: 0 0 0.5em;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.city-input {
+  border: none;
+  background: transparent;
+  border-bottom: 0.0625em solid #ccc;
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  font-size: inherit;
+  padding: 0 0.3em;
+  field-sizing: content;
+  min-width: 2rem;
+  max-width: 50%;
+}
+
+.city-input:focus {
+  outline: none;
+  border-bottom-color: #0070f3;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.today-readings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+.current-readings--sidebar {
+  margin: 1em 0 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar-values {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.reading-icon {
+  width: 30%;
+}
+
+.reading-value {
+  font-weight: 900;
+}
+
+.future-readings-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.forecast-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  padding: 0.5em;
+  background: #fff;
+  border-radius: 10px;
+  gap: 0.5em;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #a8a8a8;
+}
+
+@media (min-width: 600px) {
+  .intro {
+    font-size: 2rem;
+  }
+
+  .today-readings {
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+
+  .today-readings h1 {
+    font-size: 4em;
+  }
+
+  .current-readings--sidebar {
+    margin: 1em 0 2em;
+    flex-direction: column;
+    gap: 0.6em;
+  }
+
+  .forecast-card {
+    width: 25%;
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .intro {
+    font-size: 4rem;
+  }
+
+  .today-readings {
+    font-size: 1.8rem;
+  }
+
+  .forecast-card {
+    width: 18%;
+  }
+}
+
+@media (min-width: 2000px) {
+  .intro {
+    font-size: 6rem;
+  }
+
+  .today-readings {
+    font-size: 3rem;
+  }
+
+  .forecast-card {
+    width: 30%;
+    font-size: 3rem;
+  }
+}
