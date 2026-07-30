@@ -10,6 +10,8 @@ const windSpeed = document.getElementById("wind-speed");
 const precipitation = document.getElementById("precipitation-chance");
 const humidity = document.getElementById("relative-humidity");
 
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
+
 let typingTimer;
 let cityName = "Antarctica";
 
@@ -29,7 +31,7 @@ userInput.addEventListener("input", () => {
 
 async function getWeatherData(cityName) {
   try {
-    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${API_KEY}&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=metric`;
 
     const response = await fetch(url);
     if (!response.ok) {

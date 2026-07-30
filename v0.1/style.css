@@ -7,6 +7,8 @@
 body {
   background: #cbe7ff;
   font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -22,14 +24,13 @@ img {
 
 .container {
   margin: 0em auto;
-  padding: 3em 0 0 0;
+  padding: 3em 0 1em 0;
   width: 90%;
   max-width: 1200px;
 }
 
 .intro {
   color: #a8a8a8;
-  margin: 0 0 0.5em;
   text-align: center;
   font-size: 1.125rem;
 }
@@ -77,7 +78,6 @@ img {
   align-items: center;
   gap: 0.5em;
   width: 100%;
-  justify-content: flex-start;
 }
 
 .reading-icon {
@@ -129,6 +129,10 @@ img {
     margin: 1em 0 2em;
     flex-direction: column;
     gap: 0.6em;
+  }
+
+  .sidebar-values {
+    justify-content: flex-start;
   }
 
   .forecast-card {
